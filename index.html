@@ -14,23 +14,24 @@
     <!-- ------------------font awasam link------ -->
     <link rel="stylesheet" href="css/all.min.css">
 
-    <!-- --------css link------ -->
-    <link rel="stylesheet" href="css/style.css">
-
+    
     <!-- ----------logo--------- -->
     <link rel="icon" href="image/logo.png">
-
-
+    
+    
     <!-- ----------slick slider-------- -->
     <link rel="stylesheet" href="css/slick.css">
-
+    
     <!-- slick slider -->
-
+    
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-
-
-
+    
+    
+    <!-- --------css link------ -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- -------responsive.css ----- -->
+     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -47,31 +48,63 @@
         <div class="container">
             <a class="navbar-brand logo " href="#"><img src="image/brand img.png" alt="logo"></a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent menu_items">
-                <ul class="navbar-nav m-auto items ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">PRODUCTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
-                    </li>
-                </ul>
-                <div class="sing_up">
-                    <a href="#">SIGN IN</a>
-                    <a href="#">SIGN UP</a>
-                </div>
+            <button class="btn btn-primary    nav_btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+
+
+
+              
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <ul class="navbar-nav m-auto items ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+                </li>
+            </ul>
+            <div class="sing_up">
+                <a href="#">SIGN IN</a>
+                <a href="#">SIGN UP</a>
             </div>
+        </div>
+      </div>
+           
+                <div class="collapse navbar-collapse" id="navbarSupportedContent menu_items">
+                    <ul class="navbar-nav m-auto items ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="sing_up">
+                        <a href="#">SIGN IN</a>
+                        <a href="#">SIGN UP</a>
+                    </div>
+                </div>
+           
         </div>
     </nav>
     <!-- ------------navber part end-------- -->
+   
 
     <!-- -----------banner part start-------- -->
 
 
-    <section id="banner">
+    <section id="banner" class="position-relative">
+        <div data-aos-duration="2000" data-aos="fade-down" class="sec1_items">
+            <div data-aos="fade-down-right" class="banner_img"><img src="image/banner_image.png" alt="banner img"></div>
+        </div>
         <div class="container">
 
             <div class="row">
@@ -85,30 +118,37 @@
                         <div class="shoppp">
 
 
-                            <div class="shoping">
+
+
+                            <div class="main_hover">
+                                <div class="sub_hover">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <a href="#">Buy now</a>
+
+                            </div>
+                            <!-- <div class="shoping">
                                 <a href="#"><i class="fa-solid fa-arrow-right"></i> </a>
 
                             </div>
                             <div class="shop_texxt">
                                 <a href="#">Buy now</a>
-                            </div>
+                            </div> -->
 
 
                             <div class="shoping2">
                                 <p>Watch our
                                     video how
                                     it works</p>
-                                <div class="shopy_img">
-                                    <img src="image/circle.png" alt="..">
-                                </div>
-                                <div class="play"><i class="fa-solid fa-play"></i>
+                                <div class="shop__video position-relative">
+                                    <div class="shopy_img">
+                                        <img src="image/circle.png" alt="..">
+                                    </div>
+                                    <div class="play">
+                                        <a href="#" class="play__video"><i class="fa-solid fa-play"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div data-aos-duration="2000" data-aos="fade-down" class="sec1_items">
-                            <div data-aos="fade-down-right" class="banner_img"><img src="image/banner_image.png"
-                                    alt="banner img"></div>
                         </div>
                     </div>
                 </div>
@@ -177,7 +217,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div data-aos-duration="500" data-aos="fade-down" class="sec1_items">
+                    <div data-aos-duration="500" dat-aos="fade-down" class="sec1_items">
                         <div class="sec_item">
                             <div> <span><span class="counter">105</span>lbs</span></div>
                             <h5>Net Weight</h5>
@@ -187,7 +227,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div data-aos-duration="1000" data-aos="fade-up" class="sec1_items">
+                    <div data-aos-duration="1000" dat-aos="fade-up" class="sec1_items">
                         <div class="sec_item">
                             <div> <span><span class="counter">26</span>mph</span></div>
                             <h5>Top Speed</h5>
@@ -197,7 +237,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div data-aos-duration="1500" data-aos="flip-left" class="sec1_items">
+                    <div data-aos-duration="1500" dat-aos="flip-left" class="sec1_items">
                         <div class="sec_item">
                             <div> <span> <span class="counter">38</span>miles</span></div>
                             <h5>Max Range</h5>
@@ -207,7 +247,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div data-aos-duration="2000" data-aos="fade-right" class="sec1_items">
+                    <div data-aos-duration="2000" dat-aos="fade-right" class="sec1_items">
                         <div class="sec_item">
                             <div> <span> <span class="counter">89</span>nm</span></div>
                             <h5>Max Torques</h5>
@@ -217,7 +257,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div data-aos-duration="2500" data-aos="flip-right" class="sec1_items">
+                    <div data-aos-duration="2500" dat-aos="flip-right" class="sec1_items">
                         <div class="sec_item">
                             <div class="menu2"> <span class="menu1"> <span class="counter  ">22</span>% </span>slope
                             </div>
@@ -228,7 +268,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div data-aos-duration="3000" data-aos="fade-down-left" class="sec1_items">
+                    <div data-aos-duration="3000" dat-aos="fade-down-left" class="sec1_items">
                         <div class="sec_item">
                             <div> <span class="menu1"> <span class="counter">2</span>X</span></div>
                             <h5>Hydralic Disc Brakes</h5>
@@ -255,7 +295,7 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <div class="info_img "  data-aos-duration="2500" data-aos="flip-right"   >
+                    <div class="info_img " data-aos-duration="2500" dat-aos="flip-right">
                         <img src="image/info product.png" alt="information product">
                     </div>
                 </div>
@@ -284,7 +324,8 @@
                         <p>More torque for powerful riding with 22% maximum hill climbing capability.</p>
                     </div>
                 </div>
-                <div class="motor_img"   data-aos-duration="1500" data-aos="zoom-in"   ><img src="image/motor img.png" alt=""></div>
+                <div class="motor_img" data-aos-duration="1500" dat-aos="zoom-in"><img src="image/motor img.png"
+                        alt=""></div>
 
             </div>
         </div>
@@ -311,15 +352,16 @@
                             <h2> <img src="image/info icon.png" alt="info icon"> Material : Aluminium alloy</h2>
                             <h2> <img src="image/info icon.png" alt="info icon"> Color : Black</h2>
                             <h2> <img src="image/info icon.png" alt="info icon"> Capacity : 45lbs</h2>
-                            <h2 class="acc"     > <img src="image/info icon.png" alt="info icon"> Ease : Steady & adjustable
+                            <h2 class="acc"> <img src="image/info icon.png" alt="info icon"> Ease : Steady & adjustable
                             </h2>
                         </div>
                     </div>
-                    <div class="col-lg-6 accesories_img " data-aos-duration="1500"   data-aos="zoom-in-down" ><img src="image/accessories.png" alt="Accessories "></div>
+                    <div class="col-lg-6 accesories_img " data-aos-duration="1500" dat-aos="zoom-in-down"><img
+                            src="image/accessories.png" alt="Accessories "></div>
                 </div>
                 <div class="accesories_p2">
                     <div class="col-lg-6">
-                        <div class="Accessories_items2  " data-aos-duration="1500" data-aos="zoom-in-down"   >
+                        <div class="Accessories_items2  " data-aos-duration="1500" dat-aos="zoom-in-down">
                             <div><img src="image/shopingImg.png" alt="Accessories"></div>
                         </div>
                     </div>
@@ -407,10 +449,10 @@
                             </div>
                         </div>
                         <div class="slider-nav sliding_imgs   ">
-                            <div><img src="image/slidenavItem1.png" alt="cycle image"></div>
-                            <div><img src="image/slidenavItem2.png" alt="cycle image"></div>
-                            <div><img src="image/slidenavItem3.png" alt="cycle image"></div>
-                            <div><img src="image/slidenavItem4.png" alt="cycle image"></div>
+                            <div  class="blu1"><img src="image/slidenavItem1.png" alt="cycle image"></div>
+                            <div  class="blu1"><img src="image/slidenavItem2.png" alt="cycle image"></div>
+                            <div  class="blu1"><img src="image/slidenavItem3.png" alt="cycle image"></div>
+                            <div  class="blu1"><img src="image/slidenavItem4.png" alt="cycle image"></div>
                         </div>
 
 
@@ -478,7 +520,8 @@
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                 </ul>
-                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus id quod maxime placeat facere possimus.</p>
                                 <div class="slide_profile2">
                                     <img src="image/profile2 (2).png" alt="profile">
                                     <div class="slide_profilee">
@@ -502,7 +545,8 @@
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                 </ul>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum deleniti atque corrupti quos dolores.</p>
                                 <div class="slide_profile">
                                     <img src="image/profile3 (1).png" alt="profile">
                                     <div class="slide_profilee">
@@ -526,14 +570,15 @@
                                     <li><i class="fa-solid fa-star"></i></li>
                                     <li><i class="fa-solid fa-star"></i></li>
                                 </ul>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum deleniti atque corrupti quos dolores.</p>
                                 <div class="slide_profile">
                                     <img src="image/profile3 (1).png" alt="profile">
                                     <div class="slide_profilee">
                                         <h2>Serhiy Hipskyy</h2>
 
                                         <h3>CEO Universal</h3>
-                                       
+
 
                                     </div>
                                 </div>
@@ -655,7 +700,75 @@
 
 
 
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
 
 
@@ -670,7 +783,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
     </script>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

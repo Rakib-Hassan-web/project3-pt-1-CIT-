@@ -989,13 +989,14 @@ img {
 .sliding_imgs img{
   width: 246px;
 }
+.sliding_imgs {
+	position: absolute;
+	top: 716px;
+	left: 85px;
+}
 
 .color_slider{
   position: relative;
-}
-.sliding_imgs{
-  position: absolute;
-  top: -100px;
 }
 
 

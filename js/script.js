@@ -42,7 +42,6 @@ $('.slider-for').slick({
   });
 
 
-
   // test slick slider---------
   $('.test_profiles').slick({
   infinite: true,
@@ -50,4 +49,18 @@ $('.slider-for').slick({
   slidesToScroll: 1 ,
   prevArrow:'<i class="fa-solid arrow pre fa-arrow-left"></i>',
   nextArrow:'<i class="fa-solid arrow  nxt fa-arrow-right"></i>',
+  responsive: [
+    {
+     
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
 });

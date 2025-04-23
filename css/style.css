@@ -961,6 +961,10 @@ img {
 #color .color_txt{
   text-align: center;
 }
+.col_nav{
+  margin: 0;
+  padding: 0;
+}
 #color .color_txt h1{
   font-size: 50px;
   font-weight: 700;
